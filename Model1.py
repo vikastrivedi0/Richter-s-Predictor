@@ -29,9 +29,9 @@ xtest=xtest.join(dumdumt)
 
 xtest=ss.fit_transform(xtest)
 
-#PCA
-from sklearn.decomposition import PCA
-pca=PCA(n_components=20)
+#Dimensionality Reduction
+from sklearn.decomposition import KernelPCA
+kpca=KernelPCA(n_components=20,kernel='rbf')
 xtrain=pca.fit_transform(xtrain)
 xtest=pca.fit_transform(xtest)
 
