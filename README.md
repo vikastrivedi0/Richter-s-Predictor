@@ -7,6 +7,6 @@ This is a Random Forrest model with no default hyper-parameters which uses 100 e
 
 The Data Pre-processing steps include conversion of categorical dependent varibles to numerical variable using the One-Hot Encoding method. Also to avoid Dummy Variable Trap, one dummy variable from each set is removed. Standard scaling is also applied as dimensionality reduction methods need to be applied.
 
-As the data contains 61 features after dummy variable generation, these are to be reduced using Kernel Principle Component Analysis(KPCA) which identifies and selects 20(according to code) best features for the data which provide same variance as the original data and minimal information loss occures.
+As the data contains 61 features after dummy variable generation, these are to be reduced using Principle Component Analysis(PCA) which identifies and selects 20(according to code) best features for the data which provide same variance as the original data and minimal information loss.
 
 This data is then fitted to the Random Forrest model with 100 individual trees. The Prediction is generated and stored in a "Submission.csv" file.
